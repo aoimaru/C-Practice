@@ -16,5 +16,16 @@ int main(void) {
 	x.pop_back();
 	auto pb_size = x.size();
 	cout << "pb_size: " << pb_size << endl;
+
+	// 配列の先頭ポインタを取得
+	vector<int> y = {4, 3, 2, 1, 0};
+	auto py = y.data();
+	auto num_0 = *py;
+	auto num_1 = *(py+1);
+
+	cout << "ポインタ" << endl;
+	cout << num_0 << endl;
+	cout << num_1 << endl;
+
 	return 0;
 }
